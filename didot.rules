@@ -1,0 +1,83 @@
+
+(rules PCB didot
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 3976)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.3)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    "@:no_net_0"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND "Net-(U1-Pad6)" "Net-(U1-Pad1)" "Net-(U1-Pad2)" "Net-(U1-Pad7)" "Net-(U1-Pad5)" "Net-(DA0-Pad2)" rowA
+    "Net-(DA1-Pad2)" "Net-(DA2-Pad2)" "Net-(DA3-Pad2)" "Net-(DA4-Pad2)" "Net-(DA5-Pad2)" "Net-(DB0-Pad2)" rowB "Net-(DB1-Pad2)"
+    "Net-(DB2-Pad2)" "Net-(DB3-Pad2)" "Net-(DB4-Pad2)" "Net-(DB5-Pad2)" "Net-(DC0-Pad2)" rowC "Net-(DC1-Pad2)" "Net-(DC2-Pad2)"
+    "Net-(DC3-Pad2)" "Net-(DC4-Pad2)" "Net-(DC5-Pad2)" "Net-(DD0-Pad2)" rowD "Net-(DD1-Pad2)" "Net-(DD2-Pad2)" "Net-(DD3-Pad2)"
+    "Net-(DD4-Pad2)" "Net-(DD5-Pad2)" SWENCB rowE "Net-(DE1-Pad2)" "Net-(DE2-Pad2)" "Net-(DE3-Pad2)" "Net-(DE4-Pad2)"
+    "Net-(DE5-Pad2)" VCC RESET SWENCA col1 col2 col3 col4
+    col5 ENCB ENCA "Net-(U1-Pad21)" "Net-(SW_PWR1-Pad3)" "Net-(J1-Pad1)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

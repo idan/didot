@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name didot)(type Legacy)(uri ${KIPRJMOD}/didot.lib)(options "")(descr ""))
+)

@@ -1,0 +1,1104 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L didot:nice!nano U1
+U 1 1 5F6D0349
+P 1900 2050
+F 0 "U1" H 1900 2987 60  0000 C CNN
+F 1 "nice!nano" H 1900 2881 60  0000 C CNN
+F 2 "Didot:ProMicro" V 2950 -450 60  0001 C CNN
+F 3 "" V 2950 -450 60  0001 C CNN
+	1    1900 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW_RESET1
+U 1 1 5F6DFA15
+P 1850 4050
+F 0 "SW_RESET1" H 1850 4243 50  0000 C CNN
+F 1 "SW_Push" H 1850 4244 50  0001 C CNN
+F 2 "Didot:TACT_SWITCH_TVBP06" H 1850 4250 50  0001 C CNN
+F 3 "~" H 1850 4250 50  0001 C CNN
+	1    1850 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 2600 1700 2    50   Input ~ 0
+RESET
+Text GLabel 2050 4050 2    50   Input ~ 0
+RESET
+$Comp
+L power:GND #PWR0101
+U 1 1 5F6E9DC2
+P 1700 3450
+F 0 "#PWR0101" H 1700 3200 50  0001 C CNN
+F 1 "GND" H 1705 3277 50  0000 C CNN
+F 2 "" H 1700 3450 50  0001 C CNN
+F 3 "" H 1700 3450 50  0001 C CNN
+	1    1700 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0102
+U 1 1 5F6EA2FC
+P 2100 3450
+F 0 "#PWR0102" H 2100 3300 50  0001 C CNN
+F 1 "VCC" H 2115 3623 50  0000 C CNN
+F 2 "" H 2100 3450 50  0001 C CNN
+F 3 "" H 2100 3450 50  0001 C CNN
+	1    2100 3450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2600 1400
+NoConn ~ 1200 1400
+$Comp
+L power:GND #PWR0103
+U 1 1 5F6D257E
+P 3000 1600
+F 0 "#PWR0103" H 3000 1350 50  0001 C CNN
+F 1 "GND" V 3005 1472 50  0000 R CNN
+F 2 "" H 3000 1600 50  0001 C CNN
+F 3 "" H 3000 1600 50  0001 C CNN
+	1    3000 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5F6D2C80
+P 950 1800
+F 0 "#PWR0104" H 950 1550 50  0001 C CNN
+F 1 "GND" V 955 1672 50  0000 R CNN
+F 2 "" H 950 1800 50  0001 C CNN
+F 3 "" H 950 1800 50  0001 C CNN
+	1    950  1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	950  1800 1050 1800
+Wire Wire Line
+	1200 1700 1050 1700
+Wire Wire Line
+	1050 1700 1050 1800
+Connection ~ 1050 1800
+Wire Wire Line
+	1050 1800 1200 1800
+Wire Wire Line
+	2600 1600 3000 1600
+Text GLabel 2600 2500 2    50   Input ~ 0
+ENCA
+Text GLabel 2600 2600 2    50   Input ~ 0
+ENCB
+Text GLabel 2600 1900 2    50   Input ~ 0
+col0
+Text GLabel 2600 2000 2    50   Input ~ 0
+col1
+Text GLabel 2600 2100 2    50   Input ~ 0
+col2
+Text GLabel 2600 2200 2    50   Input ~ 0
+col3
+Text GLabel 2600 2300 2    50   Input ~ 0
+col4
+Text GLabel 2600 2400 2    50   Input ~ 0
+col5
+NoConn ~ 1200 2800
+NoConn ~ 1200 2900
+NoConn ~ 2600 2800
+NoConn ~ 1200 1500
+NoConn ~ 1200 1600
+$Comp
+L power:GND #PWR0107
+U 1 1 5F6D9034
+P 2150 4650
+F 0 "#PWR0107" H 2150 4400 50  0001 C CNN
+F 1 "GND" V 2155 4522 50  0000 R CNN
+F 2 "" H 2150 4650 50  0001 C CNN
+F 3 "" H 2150 4650 50  0001 C CNN
+	1    2150 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5F6DB764
+P 1650 4050
+F 0 "#PWR0108" H 1650 3800 50  0001 C CNN
+F 1 "GND" H 1655 3877 50  0000 C CNN
+F 2 "" H 1650 4050 50  0001 C CNN
+F 3 "" H 1650 4050 50  0001 C CNN
+	1    1650 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F6DC77B
+P 1700 3450
+F 0 "#FLG0101" H 1700 3525 50  0001 C CNN
+F 1 "PWR_FLAG" H 1700 3623 50  0000 C CNN
+F 2 "" H 1700 3450 50  0001 C CNN
+F 3 "~" H 1700 3450 50  0001 C CNN
+	1    1700 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F6DCD10
+P 2100 3450
+F 0 "#FLG0102" H 2100 3525 50  0001 C CNN
+F 1 "PWR_FLAG" H 2100 3623 50  0000 C CNN
+F 2 "" H 2100 3450 50  0001 C CNN
+F 3 "~" H 2100 3450 50  0001 C CNN
+	1    2100 3450
+	-1   0    0    1   
+$EndComp
+Text GLabel 4400 4300 0    50   Input ~ 0
+ENCA
+Text GLabel 4400 4500 0    50   Input ~ 0
+ENCB
+$Comp
+L power:GND #PWR0109
+U 1 1 5F6DE906
+P 4100 4400
+F 0 "#PWR0109" H 4100 4150 50  0001 C CNN
+F 1 "GND" V 4105 4272 50  0000 R CNN
+F 2 "" H 4100 4400 50  0001 C CNN
+F 3 "" H 4100 4400 50  0001 C CNN
+	1    4100 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 4400 4400 4400
+Text GLabel 1200 2400 0    50   Input ~ 0
+rowC
+Text GLabel 1200 2200 0    50   Input ~ 0
+rowA
+NoConn ~ 1200 2100
+$Comp
+L didot:SW_KEY SWA0
+U 1 1 5F714D64
+P 5200 1500
+F 0 "SWA0" H 5200 1709 50  0000 C CNN
+F 1 "SW_KEY" H 5200 1709 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 5250 1300 50  0001 C CNN
+F 3 "" H 5200 1500 50  0001 C CNN
+	1    5200 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DA0
+U 1 1 5F717891
+P 5400 1650
+F 0 "DA0" V 5400 1570 50  0000 R CNN
+F 1 "1N4148W" V 5355 1570 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 5400 1475 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 5400 1650 50  0001 C CNN
+	1    5400 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWA1
+U 1 1 5F71AA49
+P 6000 1500
+F 0 "SWA1" H 6000 1709 50  0000 C CNN
+F 1 "SW_KEY" H 6000 1709 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 6050 1300 50  0001 C CNN
+F 3 "" H 6000 1500 50  0001 C CNN
+	1    6000 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DA1
+U 1 1 5F71AA4F
+P 6200 1650
+F 0 "DA1" V 6200 1570 50  0000 R CNN
+F 1 "1N4148W" V 6155 1570 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 6200 1475 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 6200 1650 50  0001 C CNN
+	1    6200 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWA2
+U 1 1 5F71C94B
+P 6800 1500
+F 0 "SWA2" H 6800 1709 50  0000 C CNN
+F 1 "SW_KEY" H 6800 1709 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 6850 1300 50  0001 C CNN
+F 3 "" H 6800 1500 50  0001 C CNN
+	1    6800 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DA2
+U 1 1 5F71C951
+P 7000 1650
+F 0 "DA2" V 7000 1570 50  0000 R CNN
+F 1 "1N4148W" V 6955 1570 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 7000 1475 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7000 1650 50  0001 C CNN
+	1    7000 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWA3
+U 1 1 5F71D09B
+P 7600 1500
+F 0 "SWA3" H 7600 1709 50  0000 C CNN
+F 1 "SW_KEY" H 7600 1709 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 7650 1300 50  0001 C CNN
+F 3 "" H 7600 1500 50  0001 C CNN
+	1    7600 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DA3
+U 1 1 5F71D0A1
+P 7800 1650
+F 0 "DA3" V 7800 1570 50  0000 R CNN
+F 1 "1N4148W" V 7755 1570 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 7800 1475 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7800 1650 50  0001 C CNN
+	1    7800 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWA4
+U 1 1 5F71D193
+P 8400 1500
+F 0 "SWA4" H 8400 1709 50  0000 C CNN
+F 1 "SW_KEY" H 8400 1709 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 8450 1300 50  0001 C CNN
+F 3 "" H 8400 1500 50  0001 C CNN
+	1    8400 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DA4
+U 1 1 5F71D199
+P 8600 1650
+F 0 "DA4" V 8600 1570 50  0000 R CNN
+F 1 "1N4148W" V 8555 1570 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 8600 1475 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8600 1650 50  0001 C CNN
+	1    8600 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWA5
+U 1 1 5F71E933
+P 9200 1500
+F 0 "SWA5" H 9200 1709 50  0000 C CNN
+F 1 "SW_KEY" H 9200 1709 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 9250 1300 50  0001 C CNN
+F 3 "" H 9200 1500 50  0001 C CNN
+	1    9200 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DA5
+U 1 1 5F71E939
+P 9400 1650
+F 0 "DA5" V 9400 1570 50  0000 R CNN
+F 1 "1N4148W" V 9355 1570 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 9400 1475 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9400 1650 50  0001 C CNN
+	1    9400 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWB0
+U 1 1 5F7336AD
+P 5200 2250
+F 0 "SWB0" H 5200 2459 50  0000 C CNN
+F 1 "SW_KEY" H 5200 2459 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 5250 2050 50  0001 C CNN
+F 3 "" H 5200 2250 50  0001 C CNN
+	1    5200 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DB0
+U 1 1 5F7336B3
+P 5400 2400
+F 0 "DB0" V 5400 2320 50  0000 R CNN
+F 1 "1N4148W" V 5355 2320 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 5400 2225 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 5400 2400 50  0001 C CNN
+	1    5400 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWB1
+U 1 1 5F7336B9
+P 6000 2250
+F 0 "SWB1" H 6000 2459 50  0000 C CNN
+F 1 "SW_KEY" H 6000 2459 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 6050 2050 50  0001 C CNN
+F 3 "" H 6000 2250 50  0001 C CNN
+	1    6000 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DB1
+U 1 1 5F7336BF
+P 6200 2400
+F 0 "DB1" V 6200 2320 50  0000 R CNN
+F 1 "1N4148W" V 6155 2320 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 6200 2225 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 6200 2400 50  0001 C CNN
+	1    6200 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWB2
+U 1 1 5F7336C5
+P 6800 2250
+F 0 "SWB2" H 6800 2459 50  0000 C CNN
+F 1 "SW_KEY" H 6800 2459 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 6850 2050 50  0001 C CNN
+F 3 "" H 6800 2250 50  0001 C CNN
+	1    6800 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DB2
+U 1 1 5F7336CB
+P 7000 2400
+F 0 "DB2" V 7000 2320 50  0000 R CNN
+F 1 "1N4148W" V 6955 2320 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 7000 2225 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7000 2400 50  0001 C CNN
+	1    7000 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWB3
+U 1 1 5F7336D1
+P 7600 2250
+F 0 "SWB3" H 7600 2459 50  0000 C CNN
+F 1 "SW_KEY" H 7600 2459 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 7650 2050 50  0001 C CNN
+F 3 "" H 7600 2250 50  0001 C CNN
+	1    7600 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DB3
+U 1 1 5F7336D7
+P 7800 2400
+F 0 "DB3" V 7800 2320 50  0000 R CNN
+F 1 "1N4148W" V 7755 2320 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 7800 2225 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7800 2400 50  0001 C CNN
+	1    7800 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWB4
+U 1 1 5F7336DD
+P 8400 2250
+F 0 "SWB4" H 8400 2459 50  0000 C CNN
+F 1 "SW_KEY" H 8400 2459 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 8450 2050 50  0001 C CNN
+F 3 "" H 8400 2250 50  0001 C CNN
+	1    8400 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DB4
+U 1 1 5F7336E3
+P 8600 2400
+F 0 "DB4" V 8600 2320 50  0000 R CNN
+F 1 "1N4148W" V 8555 2320 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 8600 2225 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8600 2400 50  0001 C CNN
+	1    8600 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWB5
+U 1 1 5F7336E9
+P 9200 2250
+F 0 "SWB5" H 9200 2459 50  0000 C CNN
+F 1 "SW_KEY" H 9200 2459 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 9250 2050 50  0001 C CNN
+F 3 "" H 9200 2250 50  0001 C CNN
+	1    9200 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DB5
+U 1 1 5F7336EF
+P 9400 2400
+F 0 "DB5" V 9400 2320 50  0000 R CNN
+F 1 "1N4148W" V 9355 2320 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 9400 2225 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9400 2400 50  0001 C CNN
+	1    9400 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWC0
+U 1 1 5F74C791
+P 5200 3000
+F 0 "SWC0" H 5200 3209 50  0000 C CNN
+F 1 "SW_KEY" H 5200 3209 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 5250 2800 50  0001 C CNN
+F 3 "" H 5200 3000 50  0001 C CNN
+	1    5200 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DC0
+U 1 1 5F74C797
+P 5400 3150
+F 0 "DC0" V 5400 3070 50  0000 R CNN
+F 1 "1N4148W" V 5355 3070 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 5400 2975 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 5400 3150 50  0001 C CNN
+	1    5400 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWC1
+U 1 1 5F74C79D
+P 6000 3000
+F 0 "SWC1" H 6000 3209 50  0000 C CNN
+F 1 "SW_KEY" H 6000 3209 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 6050 2800 50  0001 C CNN
+F 3 "" H 6000 3000 50  0001 C CNN
+	1    6000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DC1
+U 1 1 5F74C7A3
+P 6200 3150
+F 0 "DC1" V 6200 3070 50  0000 R CNN
+F 1 "1N4148W" V 6155 3070 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 6200 2975 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 6200 3150 50  0001 C CNN
+	1    6200 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWC2
+U 1 1 5F74C7A9
+P 6800 3000
+F 0 "SWC2" H 6800 3209 50  0000 C CNN
+F 1 "SW_KEY" H 6800 3209 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 6850 2800 50  0001 C CNN
+F 3 "" H 6800 3000 50  0001 C CNN
+	1    6800 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DC2
+U 1 1 5F74C7AF
+P 7000 3150
+F 0 "DC2" V 7000 3070 50  0000 R CNN
+F 1 "1N4148W" V 6955 3070 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 7000 2975 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7000 3150 50  0001 C CNN
+	1    7000 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWC3
+U 1 1 5F74C7B5
+P 7600 3000
+F 0 "SWC3" H 7600 3209 50  0000 C CNN
+F 1 "SW_KEY" H 7600 3209 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 7650 2800 50  0001 C CNN
+F 3 "" H 7600 3000 50  0001 C CNN
+	1    7600 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DC3
+U 1 1 5F74C7BB
+P 7800 3150
+F 0 "DC3" V 7800 3070 50  0000 R CNN
+F 1 "1N4148W" V 7755 3070 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 7800 2975 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7800 3150 50  0001 C CNN
+	1    7800 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWC4
+U 1 1 5F74C7C1
+P 8400 3000
+F 0 "SWC4" H 8400 3209 50  0000 C CNN
+F 1 "SW_KEY" H 8400 3209 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 8450 2800 50  0001 C CNN
+F 3 "" H 8400 3000 50  0001 C CNN
+	1    8400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DC4
+U 1 1 5F74C7C7
+P 8600 3150
+F 0 "DC4" V 8600 3070 50  0000 R CNN
+F 1 "1N4148W" V 8555 3070 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 8600 2975 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8600 3150 50  0001 C CNN
+	1    8600 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWC5
+U 1 1 5F74C7CD
+P 9200 3000
+F 0 "SWC5" H 9200 3209 50  0000 C CNN
+F 1 "SW_KEY" H 9200 3209 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 9250 2800 50  0001 C CNN
+F 3 "" H 9200 3000 50  0001 C CNN
+	1    9200 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DC5
+U 1 1 5F74C7D3
+P 9400 3150
+F 0 "DC5" V 9400 3070 50  0000 R CNN
+F 1 "1N4148W" V 9355 3070 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 9400 2975 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9400 3150 50  0001 C CNN
+	1    9400 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWD0
+U 1 1 5F7866B9
+P 5200 3750
+F 0 "SWD0" H 5200 3959 50  0000 C CNN
+F 1 "SW_KEY" H 5200 3959 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 5250 3550 50  0001 C CNN
+F 3 "" H 5200 3750 50  0001 C CNN
+	1    5200 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DD0
+U 1 1 5F7866BF
+P 5400 3900
+F 0 "DD0" V 5400 3820 50  0000 R CNN
+F 1 "1N4148W" V 5355 3820 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 5400 3725 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 5400 3900 50  0001 C CNN
+	1    5400 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWD1
+U 1 1 5F7866C5
+P 6000 3750
+F 0 "SWD1" H 6000 3959 50  0000 C CNN
+F 1 "SW_KEY" H 6000 3959 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 6050 3550 50  0001 C CNN
+F 3 "" H 6000 3750 50  0001 C CNN
+	1    6000 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DD1
+U 1 1 5F7866CB
+P 6200 3900
+F 0 "DD1" V 6200 3820 50  0000 R CNN
+F 1 "1N4148W" V 6155 3820 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 6200 3725 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 6200 3900 50  0001 C CNN
+	1    6200 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWD2
+U 1 1 5F7866D1
+P 6800 3750
+F 0 "SWD2" H 6800 3959 50  0000 C CNN
+F 1 "SW_KEY" H 6800 3959 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 6850 3550 50  0001 C CNN
+F 3 "" H 6800 3750 50  0001 C CNN
+	1    6800 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DD2
+U 1 1 5F7866D7
+P 7000 3900
+F 0 "DD2" V 7000 3820 50  0000 R CNN
+F 1 "1N4148W" V 6955 3820 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 7000 3725 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7000 3900 50  0001 C CNN
+	1    7000 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWD3
+U 1 1 5F7866DD
+P 7600 3750
+F 0 "SWD3" H 7600 3959 50  0000 C CNN
+F 1 "SW_KEY" H 7600 3959 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 7650 3550 50  0001 C CNN
+F 3 "" H 7600 3750 50  0001 C CNN
+	1    7600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DD3
+U 1 1 5F7866E3
+P 7800 3900
+F 0 "DD3" V 7800 3820 50  0000 R CNN
+F 1 "1N4148W" V 7755 3820 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 7800 3725 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7800 3900 50  0001 C CNN
+	1    7800 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWD4
+U 1 1 5F7866E9
+P 8400 3750
+F 0 "SWD4" H 8400 3959 50  0000 C CNN
+F 1 "SW_KEY" H 8400 3959 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 8450 3550 50  0001 C CNN
+F 3 "" H 8400 3750 50  0001 C CNN
+	1    8400 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DD4
+U 1 1 5F7866EF
+P 8600 3900
+F 0 "DD4" V 8600 3820 50  0000 R CNN
+F 1 "1N4148W" V 8555 3820 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 8600 3725 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8600 3900 50  0001 C CNN
+	1    8600 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWD5
+U 1 1 5F7866F5
+P 9200 3750
+F 0 "SWD5" H 9200 3959 50  0000 C CNN
+F 1 "SW_KEY" H 9200 3959 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 9250 3550 50  0001 C CNN
+F 3 "" H 9200 3750 50  0001 C CNN
+	1    9200 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DD5
+U 1 1 5F7866FB
+P 9400 3900
+F 0 "DD5" V 9400 3820 50  0000 R CNN
+F 1 "1N4148W" V 9355 3820 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 9400 3725 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9400 3900 50  0001 C CNN
+	1    9400 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W DE0
+U 1 1 5F786707
+P 5400 4650
+F 0 "DE0" V 5400 4570 50  0000 R CNN
+F 1 "1N4148W" V 5355 4570 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 5400 4475 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 5400 4650 50  0001 C CNN
+	1    5400 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWE1
+U 1 1 5F78670D
+P 6000 4500
+F 0 "SWE1" H 6000 4709 50  0000 C CNN
+F 1 "SW_KEY" H 6000 4709 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible_1.5u" H 6050 4300 50  0001 C CNN
+F 3 "" H 6000 4500 50  0001 C CNN
+	1    6000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DE1
+U 1 1 5F786713
+P 6200 4650
+F 0 "DE1" V 6200 4570 50  0000 R CNN
+F 1 "1N4148W" V 6155 4570 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 6200 4475 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 6200 4650 50  0001 C CNN
+	1    6200 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWE2
+U 1 1 5F786719
+P 6800 4500
+F 0 "SWE2" H 6800 4709 50  0000 C CNN
+F 1 "SW_KEY" H 6800 4709 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible_1.5u" H 6850 4300 50  0001 C CNN
+F 3 "" H 6800 4500 50  0001 C CNN
+	1    6800 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DE2
+U 1 1 5F78671F
+P 7000 4650
+F 0 "DE2" V 7000 4570 50  0000 R CNN
+F 1 "1N4148W" V 6955 4570 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 7000 4475 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7000 4650 50  0001 C CNN
+	1    7000 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWE3
+U 1 1 5F786725
+P 7600 4500
+F 0 "SWE3" H 7600 4709 50  0000 C CNN
+F 1 "SW_KEY" H 7600 4709 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 7650 4300 50  0001 C CNN
+F 3 "" H 7600 4500 50  0001 C CNN
+	1    7600 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DE3
+U 1 1 5F78672B
+P 7800 4650
+F 0 "DE3" V 7800 4570 50  0000 R CNN
+F 1 "1N4148W" V 7755 4570 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 7800 4475 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7800 4650 50  0001 C CNN
+	1    7800 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWE4
+U 1 1 5F786731
+P 8400 4500
+F 0 "SWE4" H 8400 4709 50  0000 C CNN
+F 1 "SW_KEY" H 8400 4709 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 8450 4300 50  0001 C CNN
+F 3 "" H 8400 4500 50  0001 C CNN
+	1    8400 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DE4
+U 1 1 5F786737
+P 8600 4650
+F 0 "DE4" V 8600 4570 50  0000 R CNN
+F 1 "1N4148W" V 8555 4570 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 8600 4475 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8600 4650 50  0001 C CNN
+	1    8600 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L didot:SW_KEY SWE5
+U 1 1 5F78673D
+P 9200 4500
+F 0 "SWE5" H 9200 4709 50  0000 C CNN
+F 1 "SW_KEY" H 9200 4709 50  0001 C CNN
+F 2 "Didot:Kailh_socket_PG1350_optional_reversible" H 9250 4300 50  0001 C CNN
+F 3 "" H 9200 4500 50  0001 C CNN
+	1    9200 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W DE5
+U 1 1 5F786743
+P 9400 4650
+F 0 "DE5" V 9400 4570 50  0000 R CNN
+F 1 "1N4148W" V 9355 4570 50  0001 R CNN
+F 2 "Didot:Diode_SOD123" H 9400 4475 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9400 4650 50  0001 C CNN
+	1    9400 4650
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4500 1800 0    50   Input ~ 0
+rowA
+Text GLabel 4500 2550 0    50   Input ~ 0
+rowB
+Text GLabel 4500 3300 0    50   Input ~ 0
+rowC
+Text GLabel 4500 4050 0    50   Input ~ 0
+rowD
+Text GLabel 4500 4800 0    50   Input ~ 0
+rowE
+Wire Wire Line
+	4500 1800 5400 1800
+Connection ~ 5400 1800
+Wire Wire Line
+	5400 1800 6200 1800
+Connection ~ 6200 1800
+Wire Wire Line
+	6200 1800 7000 1800
+Connection ~ 7000 1800
+Wire Wire Line
+	7000 1800 7800 1800
+Connection ~ 7800 1800
+Wire Wire Line
+	7800 1800 8600 1800
+Connection ~ 8600 1800
+Wire Wire Line
+	8600 1800 9400 1800
+Wire Wire Line
+	4500 2550 5400 2550
+Connection ~ 5400 2550
+Wire Wire Line
+	5400 2550 6200 2550
+Connection ~ 6200 2550
+Wire Wire Line
+	6200 2550 7000 2550
+Connection ~ 7000 2550
+Wire Wire Line
+	7000 2550 7800 2550
+Connection ~ 7800 2550
+Wire Wire Line
+	7800 2550 8600 2550
+Connection ~ 8600 2550
+Wire Wire Line
+	8600 2550 9400 2550
+Wire Wire Line
+	4500 3300 5400 3300
+Connection ~ 5400 3300
+Wire Wire Line
+	5400 3300 6200 3300
+Connection ~ 6200 3300
+Wire Wire Line
+	6200 3300 7000 3300
+Connection ~ 7000 3300
+Wire Wire Line
+	7000 3300 7800 3300
+Connection ~ 7800 3300
+Wire Wire Line
+	7800 3300 8600 3300
+Connection ~ 8600 3300
+Wire Wire Line
+	8600 3300 9400 3300
+Wire Wire Line
+	4500 4050 5400 4050
+Connection ~ 5400 4050
+Wire Wire Line
+	5400 4050 6200 4050
+Connection ~ 6200 4050
+Wire Wire Line
+	6200 4050 7000 4050
+Connection ~ 7000 4050
+Wire Wire Line
+	7000 4050 7800 4050
+Connection ~ 7800 4050
+Wire Wire Line
+	7800 4050 8600 4050
+Connection ~ 8600 4050
+Wire Wire Line
+	8600 4050 9400 4050
+Wire Wire Line
+	4500 4800 5400 4800
+Connection ~ 5400 4800
+Wire Wire Line
+	5400 4800 6200 4800
+Connection ~ 6200 4800
+Wire Wire Line
+	6200 4800 7000 4800
+Connection ~ 7000 4800
+Wire Wire Line
+	7000 4800 7800 4800
+Connection ~ 7800 4800
+Wire Wire Line
+	7800 4800 8600 4800
+Connection ~ 8600 4800
+Wire Wire Line
+	8600 4800 9400 4800
+Text GLabel 5000 1000 1    50   Input ~ 0
+col0
+Text GLabel 5800 1000 1    50   Input ~ 0
+col1
+Text GLabel 6600 1000 1    50   Input ~ 0
+col2
+Text GLabel 7400 1000 1    50   Input ~ 0
+col3
+Text GLabel 8200 1000 1    50   Input ~ 0
+col4
+Text GLabel 9000 1000 1    50   Input ~ 0
+col5
+Wire Wire Line
+	5000 1000 5000 1500
+Connection ~ 5000 1500
+Wire Wire Line
+	5000 1500 5000 2250
+Connection ~ 5000 2250
+Wire Wire Line
+	5000 2250 5000 3000
+Connection ~ 5000 3000
+Wire Wire Line
+	5000 3000 5000 3750
+Wire Wire Line
+	5800 1000 5800 1500
+Connection ~ 5800 1500
+Wire Wire Line
+	5800 1500 5800 2250
+Connection ~ 5800 2250
+Wire Wire Line
+	5800 2250 5800 3000
+Connection ~ 5800 3000
+Wire Wire Line
+	5800 3000 5800 3750
+Connection ~ 5800 3750
+Wire Wire Line
+	5800 3750 5800 4500
+Wire Wire Line
+	6600 1000 6600 1500
+Connection ~ 6600 1500
+Wire Wire Line
+	6600 1500 6600 2250
+Connection ~ 6600 2250
+Wire Wire Line
+	6600 2250 6600 3000
+Connection ~ 6600 3000
+Wire Wire Line
+	6600 3000 6600 3750
+Connection ~ 6600 3750
+Wire Wire Line
+	6600 3750 6600 4500
+Wire Wire Line
+	7400 1000 7400 1500
+Connection ~ 7400 1500
+Wire Wire Line
+	7400 1500 7400 2250
+Connection ~ 7400 2250
+Wire Wire Line
+	7400 2250 7400 3000
+Connection ~ 7400 3000
+Wire Wire Line
+	7400 3000 7400 3750
+Connection ~ 7400 3750
+Wire Wire Line
+	7400 3750 7400 4500
+Wire Wire Line
+	8200 1000 8200 1500
+Connection ~ 8200 1500
+Wire Wire Line
+	8200 1500 8200 2250
+Connection ~ 8200 2250
+Wire Wire Line
+	8200 2250 8200 3000
+Connection ~ 8200 3000
+Wire Wire Line
+	8200 3000 8200 3750
+Connection ~ 8200 3750
+Wire Wire Line
+	8200 3750 8200 4500
+Wire Wire Line
+	9000 1000 9000 1500
+Connection ~ 9000 1500
+Wire Wire Line
+	9000 1500 9000 2250
+Connection ~ 9000 2250
+Wire Wire Line
+	9000 2250 9000 3000
+Connection ~ 9000 3000
+Wire Wire Line
+	9000 3000 9000 3750
+Connection ~ 9000 3750
+Wire Wire Line
+	9000 3750 9000 4500
+Text GLabel 1200 2300 0    50   Input ~ 0
+rowB
+Text GLabel 1200 2500 0    50   Input ~ 0
+rowD
+Text GLabel 1200 2600 0    50   Input ~ 0
+rowE
+$Comp
+L Device:Rotary_Encoder_Switch SWENC1
+U 1 1 5F6F02AF
+P 4700 4400
+F 0 "SWENC1" H 4700 4150 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 4700 4676 50  0001 C CNN
+F 2 "Didot:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm-keebio_modified" H 4550 4560 50  0001 C CNN
+F 3 "~" H 4700 4660 50  0001 C CNN
+	1    4700 4400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1200 1900
+NoConn ~ 1200 2000
+NoConn ~ 2600 1800
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 5F89328C
+P 2350 4650
+F 0 "J1" H 2322 4582 50  0000 R CNN
+F 1 "JST_BATTERY" H 2322 4673 50  0000 R CNN
+F 2 "Connector_JST:JST_PH_S3B-PH-K_1x03_P2.00mm_Horizontal" H 2322 4719 50  0001 R CNN
+F 3 "~" H 2350 4650 50  0001 C CNN
+	1    2350 4650
+	-1   0    0    1   
+$EndComp
+Text Notes 7350 7500 0    50   ~ 0
+Didot Keyboard
+$Comp
+L Switch:SW_SPDT SW_PWR1
+U 1 1 5F72F470
+P 1550 4650
+F 0 "SW_PWR1" H 1550 4843 50  0000 C CNN
+F 1 "SW_SPDT" H 1550 4844 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_Slide_1P2T_CK_OS102011MS2Q" H 1550 4650 50  0001 C CNN
+F 3 "~" H 1550 4650 50  0001 C CNN
+	1    1550 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0105
+U 1 1 5F733B35
+P 1350 4650
+F 0 "#PWR0105" H 1350 4500 50  0001 C CNN
+F 1 "VCC" V 1365 4777 50  0000 L CNN
+F 2 "" H 1350 4650 50  0001 C CNN
+F 3 "" H 1350 4650 50  0001 C CNN
+	1    1350 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2150 4550 1800 4550
+Wire Wire Line
+	2150 4750 1800 4750
+Wire Wire Line
+	1800 4750 1800 4550
+Connection ~ 1800 4550
+Wire Wire Line
+	1800 4550 1750 4550
+NoConn ~ 1750 4750
+$Comp
+L power:VCC #PWR?
+U 1 1 5F751657
+P 2600 1500
+F 0 "#PWR?" H 2600 1350 50  0001 C CNN
+F 1 "VCC" V 2615 1628 50  0000 L CNN
+F 2 "" H 2600 1500 50  0001 C CNN
+F 3 "" H 2600 1500 50  0001 C CNN
+	1    2600 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 3750 5000 4300
+Connection ~ 5000 3750
+Wire Wire Line
+	5000 4500 5400 4500
+$EndSCHEMATC
