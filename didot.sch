@@ -1101,4 +1101,8 @@ Wire Wire Line
 Connection ~ 5000 3750
 Wire Wire Line
 	5000 4500 5400 4500
+Text GLabel 3200 2500 0    50   Output ~ 0
+MOSI
+Text GLabel 3200 2300 0    50   Output ~ 0
+SCLK
 $EndSCHEMATC
