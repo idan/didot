@@ -1,4 +1,4 @@
-18644792029548441
+18644900466539441
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -48748,23 +48748,23 @@ THT ceramic resonator filter DSS6
 3
 3
 Didot
+1X09_ROUND_70
+
+
+0
+9
+9
+Didot
+Didot_Mark
+
+
+0
+0
+0
+Didot
 Diode_SOD123
 Diode, DO-41, SOD81, Horizontal, RM 10mm,
 Diode, DO-41, SOD81, Horizontal, RM 10mm, 1N4007, SB140,
-0
-2
-2
-Didot
-HOLE_M2_TH
-
-
-0
-1
-0
-Didot
-Jumper
-
-
 0
 2
 2
@@ -48797,6 +48797,13 @@ ProMicro
 48
 24
 Didot
+ReversibleDisplayJumper
+SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, open
+solder jumper open
+0
+3
+3
+Didot
 RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm-keebio_modified
 Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
 rotary encoder
@@ -48810,13 +48817,6 @@ TACT_SWITCH_TVBP06
 0
 2
 2
-Didot
-Waveshare_Sharp_LCD
-
-
-0
-4
-0
 Diode_SMD
 D_0201_0603Metric
 Diode SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator
