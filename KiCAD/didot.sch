@@ -50,17 +50,6 @@ F 3 "" H 1900 3450 50  0001 C CNN
 	1    1900 3450
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:VCC #PWR0102
-U 1 1 5F6EA2FC
-P 2300 3450
-F 0 "#PWR0102" H 2300 3300 50  0001 C CNN
-F 1 "VCC" H 2315 3623 50  0000 C CNN
-F 2 "" H 2300 3450 50  0001 C CNN
-F 3 "" H 2300 3450 50  0001 C CNN
-	1    2300 3450
-	1    0    0    -1  
-$EndComp
 NoConn ~ 2800 1400
 NoConn ~ 1400 1400
 $Comp
@@ -1060,17 +1049,6 @@ F 3 "~" H 1550 4650 50  0001 C CNN
 	1    1550 4650
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:VCC #PWR0105
-U 1 1 5F733B35
-P 1350 4650
-F 0 "#PWR0105" H 1350 4500 50  0001 C CNN
-F 1 "VCC" V 1365 4777 50  0000 L CNN
-F 2 "" H 1350 4650 50  0001 C CNN
-F 3 "" H 1350 4650 50  0001 C CNN
-	1    1350 4650
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2150 4550 1800 4550
 Wire Wire Line
@@ -1081,17 +1059,6 @@ Connection ~ 1800 4550
 Wire Wire Line
 	1800 4550 1750 4550
 NoConn ~ 1750 4750
-$Comp
-L power:VCC #PWR0106
-U 1 1 5F751657
-P 2800 1500
-F 0 "#PWR0106" H 2800 1350 50  0001 C CNN
-F 1 "VCC" V 2815 1628 50  0000 L CNN
-F 2 "" H 2800 1500 50  0001 C CNN
-F 3 "" H 2800 1500 50  0001 C CNN
-	1    2800 1500
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5000 3750 5000 4300
 Connection ~ 5000 3750
@@ -1104,7 +1071,7 @@ SCLK
 Text GLabel 1400 1900 0    50   Input ~ 0
 CS
 Text GLabel 2800 1800 2    50   Input ~ 0
-VCOM
+3v3
 $Comp
 L Connector:Conn_01x09_Female J2
 U 1 1 604215F5
@@ -1116,8 +1083,8 @@ F 3 "~" H 2050 5350 50  0001 C CNN
 	1    2050 5350
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 2350 5550
-NoConn ~ 1750 5550
+NoConn ~ 2450 5550
+NoConn ~ 1650 5550
 Text Notes 3100 2650 0    50   Italic 0
 D10 / A10 / LF
 Text Notes 3100 2550 0    50   Italic 0
@@ -1159,7 +1126,7 @@ L Jumper:SolderJumper_3_Open JP1
 U 1 1 6101DC67
 P 1150 6250
 F 0 "JP1" H 1150 6455 50  0000 C CNN
-F 1 "VCC" H 1150 6364 50  0000 C CNN
+F 1 "3v3" H 1150 6364 50  0000 C CNN
 F 2 "Didot:ReversibleDisplayJumper" H 1150 6250 50  0001 C CNN
 F 3 "~" H 1150 6250 50  0001 C CNN
 	1    1150 6250
@@ -1188,7 +1155,7 @@ F 3 "~" H 1700 6250 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text GLabel 1150 6400 3    50   Input ~ 0
-VCOM
+3v3
 $Comp
 L power:GND #PWR0110
 U 1 1 61027ED0
@@ -1218,15 +1185,15 @@ F 3 "~" H 2400 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 5600 1650 5550
+	1750 5600 1750 5550
 Wire Wire Line
-	2450 5650 2450 5550
+	2350 5650 2350 5550
 Wire Wire Line
-	2450 5650 1350 5650
+	2350 5650 1350 5650
 Wire Wire Line
 	1350 5650 1350 6250
 Wire Wire Line
-	1650 5600 950  5600
+	1750 5600 950  5600
 Wire Wire Line
 	950  5600 950  6250
 Wire Wire Line
@@ -1283,4 +1250,37 @@ Text Notes 2600 6350 3    50   ~ 0
 Back
 Text Notes 3150 6350 3    50   ~ 0
 Back
+$Comp
+L power:VBAT VBAT?
+U 1 1 611AA695
+P 2300 3450
+F 0 "VBAT?" V 2200 3450 50  0001 C CNN
+F 1 "VBAT" V 2200 3450 50  0001 C CNN
+F 2 "" V 2150 3450 50  0001 C CNN
+F 3 "" V 2200 3450 50  0001 C CNN
+	1    2300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBAT VBAT?
+U 1 1 611AC9AC
+P 2800 1500
+F 0 "VBAT?" V 2700 1500 50  0001 C CNN
+F 1 "VBAT" V 2700 1500 50  0001 C CNN
+F 2 "" V 2650 1500 50  0001 C CNN
+F 3 "" V 2700 1500 50  0001 C CNN
+	1    2800 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VBAT VBAT?
+U 1 1 611ADFC7
+P 1350 4650
+F 0 "VBAT?" V 1250 4650 50  0001 C CNN
+F 1 "VBAT" V 1250 4650 50  0001 C CNN
+F 2 "" V 1200 4650 50  0001 C CNN
+F 3 "" V 1250 4650 50  0001 C CNN
+	1    1350 4650
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
